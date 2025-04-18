@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chatrix - Better Than Discord</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+  <div id="app" class="flex h-screen">
+    <!-- Sidebar -->
+    <div id="sidebar" class="w-20 bg-gray-800 p-4 space-y-4 overflow-y-auto">
+      <!-- Server Icons -->
+      <button class="bg-gray-700 hover:bg-blue-600 p-3 rounded-full">+</button>
+    </div>
+
+    <!-- Channels -->
+    <div id="channels" class="w-60 bg-gray-850 p-4 space-y-2">
+      <div class="text-gray-400 text-sm">TEXT CHANNELS</div>
+      <div># general</div>
+    </div>
+
+    <!-- Main Chat -->
+    <div class="flex-1 flex flex-col">
+      <div class="p-4 bg-gray-800 border-b border-gray-700">
+        <h1 class="text-xl font-semibold">#general</h1>
+      </div>
+      <div id="messages" class="flex-1 p-4 overflow-y-auto space-y-4">
+        <div class="bg-gray-800 p-2 rounded shadow">Hello World</div>
+      </div>
+      <div class="p-4 bg-gray-900 border-t border-gray-700 flex gap-2">
+        <input type="text" placeholder="Send a message..." class="flex-1 p-2 bg-gray-800 rounded text-white" id="messageInput"/>
+        <button onclick="sendMessage()" class="bg-blue-600 px-4 py-2 rounded">Send</button>
+      </div>
+    </div>
+
+    <!-- Members -->
+    <div class="w-60 bg-gray-850 p-4">
+      <div class="text-gray-400 text-sm">ONLINE</div>
+      <div>@TestUser</div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
