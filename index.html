@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chatrix Pro</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div id="boot-screen">
+    <div class="boot-logo">💬 <strong>Chatrix</strong></div>
+    <p>Loading the next-gen chat platform...</p>
+  </div>
+  <main id="main-ui" style="display: none;">
+    <aside id="server-sidebar">
+      <!-- Server icons -->
+    </aside>
+    <section id="channels-sidebar">
+      <!-- Channels and categories -->
+    </section>
+    <section id="chat-panel">
+      <header id="chat-header">#general</header>
+      <div id="messages"></div>
+      <div id="chat-input"><textarea placeholder="Message #general..."></textarea></div>
+    </section>
+    <aside id="user-panel">
+      <div id="profile">
+        <img src="assets/default-avatar.png" alt="PFP" class="pfp" />
+        <span class="username">You</span>
+        <span class="status">Online</span>
+      </div>
+    </aside>
+  </main>
+</body>
+</html>
